@@ -105,28 +105,28 @@ class Prenotazione():
 
 
 
-
-ListaUtenti = []
-ListaTavoli = []
-myUtente = Utente("Pietro","Ferrulli","Via Roma 123","FRRPTR123123123123","pippo123",True,"pppp@outlook.it","346123456")
-myTavolo = Tavolo(1)
-myTavolo2 = Tavolo(2)
-myTavolo3 = Tavolo(3)
-myTavolo4 = Tavolo(4)
-
-
-myTavolo.prenota(myUtente,5,"27/04/2021",13)
-myTavolo.prenota(myUtente,2,"28/04/2021",12)
-myTavolo.prenota(myUtente,4,"27/04/2021",15)
-myTavolo.prenota(myUtente,3,"29/04/2021",13)
-myTavolo.prenota(myUtente,3,"27/04/2021",12,1)
+try:
+    ListaUtenti = []
+    ListaTavoli = []
+    myUtente = Utente("Pietro","Ferrulli","Via Roma 123","FRRPTR123123123123","pippo123",True,"pppp@outlook.it","346123456")
+    myTavolo = Tavolo(1)
+    myTavolo2 = Tavolo(2)
+    myTavolo3 = Tavolo(3)
+    myTavolo4 = Tavolo(4)
 
 
+    myTavolo.prenota(myUtente,5,"27/04/2021",13)
+    myTavolo.prenota(myUtente,2,"28/04/2021",12)
+    myTavolo.prenota(myUtente,4,"27/04/2021",15)
+    myTavolo.prenota(myUtente,3,"29/04/2021",13)
+    myTavolo.prenota(myUtente,3,"27/04/2021",12,1)
 
-print("-----Calendario Tavolo-----")
-myTavolo.stampacal()
-
-
+    print("-----Calendario Tavolo-----")
+    myTavolo.stampacal()
+except TypeError():
+    print("Errore!")
+else:
+    print("Tutto bene")
 
 '''
 myUtente2 = Utente("Mario","Rossi","Via Lazo 321","RSSMR123123123123","pippo123",True,"mrmr@outlook.it","3463213213216")
